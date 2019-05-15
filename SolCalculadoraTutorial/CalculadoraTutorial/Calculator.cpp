@@ -11,22 +11,19 @@ Calculator::~Calculator()
 {
 }*/
 
-double Calculator::Calculate(double x, char oper, double y)
+double Calculator::Suma(double x, double y)
 {
-	
-	switch (oper)
-	{
-	case '+':
-		return x + y;
-	case '-':
-		return x - y;
-	case '*':
-		return x * y;
-	case '/':
-		return x / y;
-	
-	default:
-		return 0.0;
-
-	}
+	return x + y;
+}
+double Calculator::Resta(double x, double y)
+{
+	return x - y;
+}
+double Calculator::Multiplicacion(double x, double y)
+{
+	return x * y;
+}
+double Calculator::Division(double x, double y)
+{
+	return x / y;
 }
